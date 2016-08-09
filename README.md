@@ -1,6 +1,8 @@
-A good-lookin' segmented control React component: `<SegmentedControl>`. Includes a version for [Formsy](https://github.com/christianalfoni/formsy-react): `<FormsySegmentedControl>`.
+A good-lookin' segmented control React component – `<SegmentedControl>`
 
-## Component background
+Includes a version for [Formsy](https://github.com/christianalfoni/formsy-react) – `<FormsySegmentedControl>`
+
+## UX background
 
 In iOS, a segmented control is usually used to [display different views](https://developer.apple.com/ios/human-interface-guidelines/ui-controls/segmented-controls/) (the equivalent of [tabs](https://material.google.com/components/tabs.html) in material design). However, segmented controls are increasingly being used in lieu of [plain radio buttons](https://material.google.com/components/selection-controls.html#selection-controls-radio-button) or select inputs (dropdowns, or material [menus](https://material.google.com/components/menus.html)). See for instance the designer [lukew](http://www.twitter.com/lukew)'s recommendations:
 
@@ -14,7 +16,7 @@ A similar component in material design is the [toggle button](https://material.g
 
 ## Component
 
-*[Component demo]*
+**[Demo: lorensr.me/segmented-control](http://lorensr.me/segmented-control/)**
 
 pics
 
@@ -37,7 +39,9 @@ npm install --save segmented-control
 
 ```jsx
 import { SegmentedControl } from 'segmented-control'
+
 ...
+
 <SegmentedControl
   name="oneDisabled"
   options={[
@@ -51,7 +55,7 @@ import { SegmentedControl } from 'segmented-control'
   />
 ```
 
-`<FormsySegmentedControl>` has the same props, but includes `Formsy.Mixin` and calls Formsy's `setValue`, so that the value is contained in `onSubmit` (see the event triggered by submitting the [demo form]()). In the example below, the first arg of `onSubmit` would be `{exampleInput: 'two'}`:
+`<FormsySegmentedControl>` has the same props, but includes `Formsy.Mixin` and calls Formsy's `setValue`, so that the value is included in `onSubmit` (see the event triggered by submitting the [demo form](http://lorensr.me/segmented-control/?selectedKind=FormsySegmentedControl&selectedStory=Three%20options&full=0&down=1&left=1&panelRight=0)). In the example below, the first arg of `onSubmit` would be `{exampleInput: 'two'}`:
 
 ```jsx
 import Formsy from 'formsy-react'
@@ -91,4 +95,4 @@ import { FormsySegmentedControl } from 'segmented-control'
 ## Credits
 
 - CSS from @fstgerm: http://code.fstgerm.com/pure-css-segmented-controls/
-- Contributions by [these fine folks]
+- Contributions by [these fine folks](https://github.com/lorensr/segmented-control/graphs/contributors)

@@ -2,6 +2,7 @@
   "name": "segmented-control",
   "version": "0.0.1",
   "description": "💅 A good-lookin' segmented control React component",
+  "homepage": "https://github.com/lorensr/segmented-control",
   "keywords": [
     "react",
     "reactjs",
