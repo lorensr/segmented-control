@@ -1,3 +1,4 @@
+ 
 `<SegmentedControl>` – a good-lookin' segmented control React component
 
 `<FormsySegmentedControl>` – a version for [Formsy](https://github.com/christianalfoni/formsy-react)
