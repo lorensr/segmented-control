@@ -1,21 +1,19 @@
 {
   "name": "segmented-control",
-  "version": "0.0.4",
-  "description": "💅 A good-lookin' segmented control React component",
+  "version": "0.1.0",
+  "description": "💅  A good-lookin' segmented control React component",
   "homepage": "https://github.com/lorensr/segmented-control",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009",
     "build-storybook": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook": "storybook-to-ghpages",
+    "prepublish": "sh scripts/prepublish.sh"
   },
   "bugs": {
     "url": "https://github.com/lorensr/segmented-control/issues"
   },
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "files": [
     "src"
   ],
@@ -37,13 +35,20 @@
     "url": "https://github.com/lorensr/segmented-control.git"
   },
   "devDependencies": {
-    "react-scripts": "0.2.1",
-    "@kadira/storybook": "^2.0.0",
     "@kadira/react-storybook-addon-info": "^3.1.2",
     "@kadira/react-storybook-decorator-centered": "^1.0.0",
+    "@kadira/storybook": "^2.0.0",
     "@kadira/storybook-deployer": "^1.0.0",
-    "react-tap-event-plugin": "^1.0.0",
-    "material-ui": "^0.15.3"
+    "babel": "^6.5.2",
+    "babel-cli": "^6.11.4",
+    "babel-eslint": "^6.1.2",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "gulp": "^3.9.1",
+    "material-ui": "^0.15.3",
+    "react-component-tools": "^1.1.2",
+    "react-scripts": "0.2.1",
+    "react-tap-event-plugin": "^1.0.0"
   },
   "dependencies": {
     "react": "^15.2.1",
