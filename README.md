@@ -4,7 +4,6 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [UX background](#ux-background)
 - [Component](#component)
@@ -31,10 +30,10 @@ A similar component in material design is the [toggle button](https://material.g
 
 **Demo:** [lorensr.me/segmented-control](http://lorensr.me/segmented-control/)
 
-![two](https://photos-6.dropbox.com/t/2/AADtLpwaECC3TfnTnsskTQdEgR0TYJCsIa2CXYbny_FS5w/12/27134267/png/32x32/3/1470816000/0/2/Screenshot%202016-08-09%2023.38.02.png/EP6MtxQY8Z2XASACKAI/85cbLlaOvhMAJu4e0J3Ag1gGF_1J9vlMMvqGyzlSOGc?size_mode=3&size=2048x1536&dl=0)
-![three](https://photos-2.dropbox.com/t/2/AACatyX4K9bbuKlPAdQrXoIaGimcVz2ZXcaN8BisYbMsPQ/12/27134267/png/32x32/3/1470816000/0/2/Screenshot%202016-08-09%2023.38.32.png/EP6MtxQY8Z2XASACKAI/MK1uFT0YxErZDu3crjs4omGWbZpxILzn0RSe0AYj1FA?size_mode=3&size=2048x1536&dl=0)
-![disabled](https://photos-6.dropbox.com/t/2/AABxaalb9FVuQdyfg_Lg6dHWrNjmfdx6KGdQJkh7Ot5fjg/12/27134267/png/32x32/3/1470816000/0/2/Screenshot%202016-08-09%2023.38.39.png/EP6MtxQY8Z2XASACKAI/MjZXWa75gw7hpp0jgAMJ3S4pth9_mtJhvZmGYD2Kf2g?size_mode=3&size=2048x1536&dl=0)
-![formsy](https://photos-1.dropbox.com/t/2/AABqhrjYbcuzVI0dG9o1FOSDrRs4Cji3g-xMW4bZ6Ae8jQ/12/27134267/png/32x32/3/1470816000/0/2/Screenshot%202016-08-09%2023.38.46.png/EP6MtxQY8Z2XASACKAI/s-sxDo0yRf8sYXTdzwv9dT0Y2oqh4Dh2LsRKZnyqOIs?size_mode=3&size=2048x1536&dl=0)
+[![two](https://photos-6.dropbox.com/t/2/AADtLpwaECC3TfnTnsskTQdEgR0TYJCsIa2CXYbny_FS5w/12/27134267/png/32x32/3/1470816000/0/2/Screenshot%202016-08-09%2023.38.02.png/EP6MtxQY8Z2XASACKAI/85cbLlaOvhMAJu4e0J3Ag1gGF_1J9vlMMvqGyzlSOGc?size_mode=3&size=2048x1536&dl=0)](http://lorensr.me/segmented-control/?selectedKind=SegmentedControl&selectedStory=Two%20options&full=0&down=1&left=1&panelRight=0)
+[![three](https://photos-2.dropbox.com/t/2/AACatyX4K9bbuKlPAdQrXoIaGimcVz2ZXcaN8BisYbMsPQ/12/27134267/png/32x32/3/1470816000/0/2/Screenshot%202016-08-09%2023.38.32.png/EP6MtxQY8Z2XASACKAI/MK1uFT0YxErZDu3crjs4omGWbZpxILzn0RSe0AYj1FA?size_mode=3&size=2048x1536&dl=0)](http://lorensr.me/segmented-control/?selectedKind=SegmentedControl&selectedStory=Three%20options&full=0&down=1&left=1&panelRight=0)
+[![disabled](https://photos-6.dropbox.com/t/2/AABxaalb9FVuQdyfg_Lg6dHWrNjmfdx6KGdQJkh7Ot5fjg/12/27134267/png/32x32/3/1470816000/0/2/Screenshot%202016-08-09%2023.38.39.png/EP6MtxQY8Z2XASACKAI/MjZXWa75gw7hpp0jgAMJ3S4pth9_mtJhvZmGYD2Kf2g?size_mode=3&size=2048x1536&dl=0)](http://lorensr.me/segmented-control/?selectedKind=SegmentedControl&selectedStory=One%20disabled&full=0&down=1&left=1&panelRight=0)
+[![formsy](https://photos-1.dropbox.com/t/2/AABqhrjYbcuzVI0dG9o1FOSDrRs4Cji3g-xMW4bZ6Ae8jQ/12/27134267/png/32x32/3/1470816000/0/2/Screenshot%202016-08-09%2023.38.46.png/EP6MtxQY8Z2XASACKAI/s-sxDo0yRf8sYXTdzwv9dT0Y2oqh4Dh2LsRKZnyqOIs?size_mode=3&size=2048x1536&dl=0)](http://lorensr.me/segmented-control/?selectedKind=FormsySegmentedControl&selectedStory=Three%20options&full=0&down=1&left=1&panelRight=0)
 
 ## Usage
 
