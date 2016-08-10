@@ -1,4 +1,6 @@
- 
+<!-- this period prevents npm from cutting off the first line -->
+.
+
 `<SegmentedControl>` – a good-lookin' segmented control React component
 
 `<FormsySegmentedControl>` – a version for [Formsy](https://github.com/christianalfoni/formsy-react)
