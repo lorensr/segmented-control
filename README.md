@@ -1,6 +1,19 @@
-A good-lookin' segmented control React component – `<SegmentedControl>`
+`<SegmentedControl>` – a good-lookin' segmented control React component
 
-Includes a version for [Formsy](https://github.com/christianalfoni/formsy-react) – `<FormsySegmentedControl>`
+`<FormsySegmentedControl>` – a version for [Formsy](https://github.com/christianalfoni/formsy-react)
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [UX background](#ux-background)
+- [Component](#component)
+- [Usage](#usage)
+  - [Plain](#plain)
+  - [Formsy](#formsy)
+- [Credits](#credits)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## UX background
 
@@ -16,7 +29,7 @@ A similar component in material design is the [toggle button](https://material.g
 
 ## Component
 
-**[Demo: lorensr.me/segmented-control](http://lorensr.me/segmented-control/)**
+**Demo:** [lorensr.me/segmented-control](http://lorensr.me/segmented-control/)
 
 ![two](https://photos-6.dropbox.com/t/2/AADtLpwaECC3TfnTnsskTQdEgR0TYJCsIa2CXYbny_FS5w/12/27134267/png/32x32/3/1470816000/0/2/Screenshot%202016-08-09%2023.38.02.png/EP6MtxQY8Z2XASACKAI/85cbLlaOvhMAJu4e0J3Ag1gGF_1J9vlMMvqGyzlSOGc?size_mode=3&size=2048x1536&dl=0)
 ![three](https://photos-2.dropbox.com/t/2/AACatyX4K9bbuKlPAdQrXoIaGimcVz2ZXcaN8BisYbMsPQ/12/27134267/png/32x32/3/1470816000/0/2/Screenshot%202016-08-09%2023.38.32.png/EP6MtxQY8Z2XASACKAI/MK1uFT0YxErZDu3crjs4omGWbZpxILzn0RSe0AYj1FA?size_mode=3&size=2048x1536&dl=0)
@@ -28,6 +41,8 @@ A similar component in material design is the [toggle button](https://material.g
 ```sh
 npm install --save segmented-control
 ```
+
+### Plain
 
 `<SegmentedControl>` props:
 
@@ -57,6 +72,8 @@ import { SegmentedControl } from 'segmented-control'
   style={{ width: 400, color: '#ab47bc' }} // purple400
   />
 ```
+
+### Formsy
 
 `<FormsySegmentedControl>` has the same props, but includes `Formsy.Mixin` and calls Formsy's `setValue`, so that the value is included in `onSubmit` (see the event triggered by submitting the [demo form](http://lorensr.me/segmented-control/?selectedKind=FormsySegmentedControl&selectedStory=Three%20options&full=0&down=1&left=1&panelRight=0)). In the example below, the first arg of `onSubmit` would be `{exampleInput: 'two'}`:
 
