@@ -1,6 +1,6 @@
 {
   "name": "segmented-control",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "💅  A good-lookin' segmented control React component",
   "homepage": "https://github.com/lorensr/segmented-control",
   "scripts": {
@@ -15,7 +15,7 @@
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
-    "src"
+    "dist"
   ],
   "keywords": [
     "react",
