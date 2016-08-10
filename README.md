@@ -18,7 +18,10 @@ A similar component in material design is the [toggle button](https://material.g
 
 **[Demo: lorensr.me/segmented-control](http://lorensr.me/segmented-control/)**
 
-pics
+![two](https://photos-6.dropbox.com/t/2/AADtLpwaECC3TfnTnsskTQdEgR0TYJCsIa2CXYbny_FS5w/12/27134267/png/32x32/3/1470816000/0/2/Screenshot%202016-08-09%2023.38.02.png/EP6MtxQY8Z2XASACKAI/85cbLlaOvhMAJu4e0J3Ag1gGF_1J9vlMMvqGyzlSOGc?size_mode=3&size=2048x1536&dl=0)
+![three](https://photos-2.dropbox.com/t/2/AACatyX4K9bbuKlPAdQrXoIaGimcVz2ZXcaN8BisYbMsPQ/12/27134267/png/32x32/3/1470816000/0/2/Screenshot%202016-08-09%2023.38.32.png/EP6MtxQY8Z2XASACKAI/MK1uFT0YxErZDu3crjs4omGWbZpxILzn0RSe0AYj1FA?size_mode=3&size=2048x1536&dl=0)
+![disabled](https://photos-6.dropbox.com/t/2/AABxaalb9FVuQdyfg_Lg6dHWrNjmfdx6KGdQJkh7Ot5fjg/12/27134267/png/32x32/3/1470816000/0/2/Screenshot%202016-08-09%2023.38.39.png/EP6MtxQY8Z2XASACKAI/MjZXWa75gw7hpp0jgAMJ3S4pth9_mtJhvZmGYD2Kf2g?size_mode=3&size=2048x1536&dl=0)
+![formsy](https://photos-1.dropbox.com/t/2/AABqhrjYbcuzVI0dG9o1FOSDrRs4Cji3g-xMW4bZ6Ae8jQ/12/27134267/png/32x32/3/1470816000/0/2/Screenshot%202016-08-09%2023.38.46.png/EP6MtxQY8Z2XASACKAI/s-sxDo0yRf8sYXTdzwv9dT0Y2oqh4Dh2LsRKZnyqOIs?size_mode=3&size=2048x1536&dl=0)
 
 ## Usage
 
@@ -94,5 +97,5 @@ import { FormsySegmentedControl } from 'segmented-control'
 
 ## Credits
 
-- CSS from @fstgerm: http://code.fstgerm.com/pure-css-segmented-controls/
+- CSS from [@fstgerm](https://github.com/fstgerm): http://code.fstgerm.com/pure-css-segmented-controls/
 - Contributions by [these fine folks](https://github.com/lorensr/segmented-control/graphs/contributors)
