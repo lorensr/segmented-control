@@ -10,7 +10,10 @@ const FormsySegmentedControl = React.createClass({
     return (
       <SegmentedControl
         {...this.props}
-        setValue={this.setValue}
+        setValue={(val) => {
+          this.props.setValue && this.props.setValue(val)
+          return this.setValue(val) // Formsy's setValue
+        }}
         />
     )
   }

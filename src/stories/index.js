@@ -62,6 +62,7 @@ storiesOf('FormsySegmentedControl', module)
           { label: "Three", value: "three" }
         ]}
         style={{ width: 300, color: 'rgb(0, 188, 212)' }} // match default material-ui primary teal
+        setValue={action('setValue')}
         />
       <RaisedButton
         type="submit"
