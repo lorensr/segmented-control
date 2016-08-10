@@ -1,6 +1,6 @@
 {
   "name": "segmented-control",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "💅 A good-lookin' segmented control React component",
   "homepage": "https://github.com/lorensr/segmented-control",
   "scripts": {
@@ -33,8 +33,8 @@
     "formsy-component"
   ],
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/lorensr/segmented-control.git"
+    "type": "git",
+    "url": "https://github.com/lorensr/segmented-control.git"
   },
   "devDependencies": {
     "react-scripts": "0.2.1",
