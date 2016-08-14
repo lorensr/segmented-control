@@ -1,5 +1,6 @@
 <!-- this period prevents npm from cutting off the first line -->
-.
+<!-- . -->
+[![npm version](https://badge.fury.io/js/segmented-control.svg)](https://badge.fury.io/js/segmented-control)
 
 `<SegmentedControl>` – a good-lookin' segmented control React component
 
@@ -8,12 +9,14 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+
 - [UX background](#ux-background)
 - [Component](#component)
 - [Usage](#usage)
   - [Plain](#plain)
   - [Formsy](#formsy)
-- [Credits](#credits)
+- [Development](#development)
+  - [Credits](#credits)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -60,8 +63,6 @@ npm install --save segmented-control
 ```jsx
 import { SegmentedControl } from 'segmented-control'
 
-...
-
 <SegmentedControl
   name="oneDisabled"
   options={[
@@ -84,8 +85,6 @@ import Formsy from 'formsy-react'
 import RaisedButton from 'material-ui/RaisedButton'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import { FormsySegmentedControl } from 'segmented-control'
-
-...
 
 <MuiThemeProvider>
   <Formsy.Form
@@ -114,7 +113,18 @@ import { FormsySegmentedControl } from 'segmented-control'
 </MuiThemeProvider>
 ```  
 
-## Credits
+## Development
 
-- CSS from [@fstgerm](https://github.com/fstgerm): http://code.fstgerm.com/pure-css-segmented-controls/
+```sh
+git clone git@github.com:lorensr/segmented-control.git
+npm install
+npm run storybook
+```
+
+[http://localhost:9009](http://localhost:9009)
+
+
+### Credits
+
 - Contributions by [these fine folks](https://github.com/lorensr/segmented-control/graphs/contributors)
+- CSS from [@fstgerm](https://github.com/fstgerm): http://code.fstgerm.com/pure-css-segmented-controls/
