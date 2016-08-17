@@ -1,6 +1,6 @@
 {
   "name": "segmented-control",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "💅  A good-lookin' segmented control React component",
   "homepage": "https://github.com/lorensr/segmented-control",
   "scripts": {
