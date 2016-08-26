@@ -35,6 +35,8 @@
     "url": "https://github.com/lorensr/segmented-control.git"
   },
   "devDependencies": {
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
     "@kadira/react-storybook-addon-info": "^3.1.2",
     "@kadira/react-storybook-decorator-centered": "^1.0.0",
     "@kadira/storybook": "^2.0.0",
@@ -49,10 +51,12 @@
     "react-scripts": "0.2.1"
   },
   "dependencies": {
-    "react": "^15.2.1",
-    "react-dom": "^15.2.1",
     "formsy-react": "^0.18.1",
     "lodash": "^4.14.1"
+  },
+  "peerDependencies": {
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
   },
   "eslintConfig": {
     "extends": "./node_modules/react-scripts/config/eslint.js"
