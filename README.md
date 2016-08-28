@@ -1,5 +1,6 @@
 <!-- this period prevents npm from cutting off the first line -->
-.<!-- end period -->
+.
+<!-- end period -->
 [![npm version](https://badge.fury.io/js/segmented-control.svg)](https://badge.fury.io/js/segmented-control)
 
 `<SegmentedControl>` – a good-lookin' segmented control React component
