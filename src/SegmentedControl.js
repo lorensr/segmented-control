@@ -36,7 +36,7 @@ const SegmentedControl = React.createClass({
         >
         {this.props.options.map(option => (
           <input
-            key={option.value}
+            key={getId(option)}
             type="radio"
             name={this.props.name}
             id={getId(option)}
@@ -48,7 +48,7 @@ const SegmentedControl = React.createClass({
         }
         {this.props.options.map(option => (
           <label
-            key={option.value}
+            key={getId(option)}
             htmlFor={getId(option)}
             data-value={option.label}
             >
