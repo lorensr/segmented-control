@@ -1,4 +1,4 @@
-<!-- this period prevents npm from cutting off the first line -->
+<!-- this period prevents npm from cutting off the first line of text -->
 .
 <!-- end period -->
 [![npm version](https://badge.fury.io/js/segmented-control.svg)](https://badge.fury.io/js/segmented-control)
