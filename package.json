@@ -53,6 +53,7 @@
   },
   "dependencies": {
     "formsy-react": "^0.18.1",
+    "prop-types": "^15.5.10",
     "lodash": "^4.14.1"
   },
   "peerDependencies": {
