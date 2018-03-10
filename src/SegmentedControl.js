@@ -1,24 +1,25 @@
-import React, { PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from "prop-types"
 import _ from 'lodash'
 
 import './SegmentedControl.css'
 
-const SegmentedControl = React.createClass({
-  propTypes: {
+class SegmentedControl extends Component {
+  static propTypes = {
     name: PropTypes.string.isRequired,
     options: PropTypes.array.isRequired,
     style: PropTypes.object,
-    setValue: PropTypes.func,
-  },
+    setValue: PropTypes.func
+  }
 
   componentWillMount() {
     const defaultOption = _.find(this.props.options, {default: true})
     this.setValue(defaultOption.value)
-  },
+  }
 
   setValue(val) {
     this.props.setValue && this.props.setValue(val)
-  },
+  }
 
   render() {
     const getId = option => this.props.name + option.value
@@ -58,6 +59,6 @@ const SegmentedControl = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default SegmentedControl;

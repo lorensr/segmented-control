@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Formsy from 'formsy-react'
 
 import SegmentedControl from './SegmentedControl'
 
-const FormsySegmentedControl = React.createClass({
-  mixins: [Formsy.Mixin],
+class FormsySegmentedControl extends Component {
+  mixins = [Formsy.Mixin]
 
   render() {
     return (
@@ -17,6 +17,6 @@ const FormsySegmentedControl = React.createClass({
         />
     )
   }
-})
+}
 
 export default FormsySegmentedControl
