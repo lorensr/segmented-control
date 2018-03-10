@@ -36,8 +36,8 @@
     "url": "https://github.com/lorensr/segmented-control.git"
   },
   "devDependencies": {
-    "react": "^15.2.1",
-    "react-dom": "^15.2.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "@kadira/react-storybook-addon-info": "^3.1.2",
     "@kadira/react-storybook-decorator-centered": "^1.0.0",
     "@kadira/storybook": "^2.0.0",
