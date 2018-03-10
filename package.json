@@ -57,8 +57,8 @@
     "prop-types": "^15.6.1"
   },
   "peerDependencies": {
-    "react": "^15.2.1",
-    "react-dom": "^15.2.1"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   },
   "eslintConfig": {
     "extends": "./node_modules/react-scripts/config/eslint.js"
