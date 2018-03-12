@@ -1,22 +1,20 @@
-import React from 'react'
-import Formsy from 'formsy-react'
+import React, { Component } from 'react'
+import { withFormsy } from 'formsy-react'
 
 import SegmentedControl from './SegmentedControl'
 
-const FormsySegmentedControl = React.createClass({
-  mixins: [Formsy.Mixin],
-
+class FormsySegmentedControl extends Component {
   render() {
     return (
       <SegmentedControl
         {...this.props}
-        setValue={(val) => {
+        setValue={val => {
           this.props.setValue && this.props.setValue(val)
-          return this.setValue(val) // Formsy's setValue
+          return this.props.setValue(val) // Formsy's setValue
         }}
-        />
+      />
     )
   }
-})
+}
 
-export default FormsySegmentedControl
+export default withFormsy(FormsySegmentedControl)

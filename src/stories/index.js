@@ -1,7 +1,8 @@
 import React from 'react'
 import Formsy from 'formsy-react'
-import { storiesOf, action } from '@kadira/storybook'
-import centered from '@kadira/react-storybook-decorator-centered'
+import { storiesOf } from '@storybook/react'
+import { action } from '@storybook/addon-actions' 
+import centered from '@storybook/addon-centered'
 import RaisedButton from 'material-ui/RaisedButton'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
@@ -10,7 +11,7 @@ import FormsySegmentedControl from '../FormsySegmentedControl'
 
 storiesOf('SegmentedControl', module)
 .addDecorator(centered)
-.addWithInfo('Two options', () => (
+.add('Two options', () => (
   <SegmentedControl
     name="twoOptions"
     options={[
@@ -21,7 +22,7 @@ storiesOf('SegmentedControl', module)
     setValue={action('setValue')}
     />
 ))
-.addWithInfo('Three options', () => (
+.add('Three options', () => (
   <SegmentedControl
     name="threeOptions"
     options={[
@@ -33,7 +34,7 @@ storiesOf('SegmentedControl', module)
     setValue={action('setValue')}
     />
 ))
-.addWithInfo('One disabled', () => (
+.add('One disabled', () => (
   <SegmentedControl
     name="oneDisabled"
     options={[
@@ -49,9 +50,9 @@ storiesOf('SegmentedControl', module)
 
 storiesOf('FormsySegmentedControl', module)
 .addDecorator(centered)
-.addWithInfo('Three options', () => (
+.add('Three options', () => (
   <MuiThemeProvider>
-    <Formsy.Form
+    <Formsy
       onValidSubmit={action('onFormsySubmit')}
       >
       <FormsySegmentedControl
@@ -63,7 +64,7 @@ storiesOf('FormsySegmentedControl', module)
         ]}
         style={{ width: 300, color: 'rgb(0, 188, 212)' }} // match default material-ui primary teal
         setValue={action('setValue')}
-        />
+      />
       <RaisedButton
         type="submit"
         label="submit formsy form"
@@ -74,6 +75,7 @@ storiesOf('FormsySegmentedControl', module)
         }}
         primary
         />
-    </Formsy.Form>
+    </Formsy>
   </MuiThemeProvider>
 ))
+

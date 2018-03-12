@@ -1,11 +1,7 @@
-import { setAddon, configure } from '@kadira/storybook'
-import infoAddon from '@kadira/react-storybook-addon-info'
-import 'react-lumberjack'
-
-setAddon(infoAddon);
+import { configure } from '@storybook/react';
 
 function loadStories() {
-  require('../src/stories')
+  require('../src/stories');
 }
 
-configure(loadStories, module)
+configure(loadStories, module);

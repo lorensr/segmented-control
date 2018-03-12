@@ -1,13 +1,13 @@
 {
   "name": "segmented-control",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "💅  A good-lookin' segmented control React component",
   "homepage": "https://github.com/lorensr/segmented-control",
   "scripts": {
     "storybook": "start-storybook -p 9009",
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
-    "prepublish": "sh scripts/prepublish.sh",
+    "prepublishOnly": "sh scripts/prepublish.sh",
     "postversion": "git push && git push --follow-tags"
   },
   "bugs": {
@@ -36,28 +36,33 @@
     "url": "https://github.com/lorensr/segmented-control.git"
   },
   "devDependencies": {
-    "react": "^15.2.1",
-    "react-dom": "^15.2.1",
-    "@kadira/react-storybook-addon-info": "^3.1.2",
-    "@kadira/react-storybook-decorator-centered": "^1.0.0",
-    "@kadira/storybook": "^2.0.0",
-    "@kadira/storybook-deployer": "^1.0.0",
-    "babel": "^6.5.2",
+    "@storybook/addon-actions": "^3.3.15",
+    "@storybook/addon-centered": "^3.3.15",
+    "@storybook/addon-links": "^3.3.15",
+    "@storybook/addons": "^3.3.15",
+    "@storybook/react": "^3.3.15",
     "babel-cli": "^6.11.4",
-    "babel-eslint": "^6.1.2",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
-    "material-ui": "^0.15.3",
+    "babel-runtime": "^6.26.0",
+    "material-ui": "^0.20.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-lumberjack": "^2.0.0",
-    "react-scripts": "0.2.1"
+    "react-scripts": "1.1.1"
   },
   "dependencies": {
-    "formsy-react": "^0.18.1",
-    "lodash": "^4.14.1"
+    "formsy-react": "^1.1.4",
+    "lodash": "^4.14.1",
+    "prop-types": "^15.6.1",
+    "create-react-class": "^15.6.3"
   },
   "peerDependencies": {
-    "react": "^15.2.1",
-    "react-dom": "^15.2.1"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   },
   "eslintConfig": {
     "extends": "./node_modules/react-scripts/config/eslint.js"
