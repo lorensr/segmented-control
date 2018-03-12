@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import PropTypes from "prop-types"
-import _ from 'lodash'
+import PropTypes from 'prop-types'
+import find from 'lodash/find'
+import extend from 'lodash/extend'
 
 import './SegmentedControl.css'
 
@@ -13,7 +14,7 @@ class SegmentedControl extends Component {
   }
 
   componentWillMount() {
-    const defaultOption = _.find(this.props.options, {default: true})
+    const defaultOption = find(this.props.options, { default: true })
     this.setValue(defaultOption.value)
   }
 
@@ -28,13 +29,10 @@ class SegmentedControl extends Component {
       width: '100%'
     }
 
-    const style = _.extend(defaultStyle, this.props.style)
+    const style = extend(defaultStyle, this.props.style)
 
     return (
-      <div
-        className="segmented-control"
-        style={style}
-        >
+      <div className="segmented-control" style={style}>
         {this.props.options.map(option => (
           <input
             key={option.value}
@@ -43,22 +41,21 @@ class SegmentedControl extends Component {
             id={getId(option)}
             defaultChecked={option.default}
             disabled={option.disabled}
-            />
-          ))
-        }
+          />
+        ))}
         {this.props.options.map(option => (
           <label
             key={option.value}
             onClick={() => this.setValue(option.value)}
             htmlFor={getId(option)}
             data-value={option.label}
-            >
+          >
             {option.label}
           </label>
         ))}
       </div>
-    );
+    )
   }
 }
 
-export default SegmentedControl;
+export default SegmentedControl
