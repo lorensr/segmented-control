@@ -53,7 +53,7 @@ npm install --save segmented-control
 `<SegmentedControl>` props:
 
 - `name: PropTypes.string.isRequired`: name of the radio `<input>`s. Also the attribute included in the first argument of Formsy's `onSubmit`.
-- `options: PropTypes.array.isRequired`: each an object with:
+- `options: PropTypes.array.isRequired`: Maximum length 10, each element an object of the form:
   - `label`: display text
   - `value`: value passed to `setValue` and Formsy's `onSubmit`
   - `default: true`: one object must have this
@@ -119,7 +119,7 @@ import { FormsySegmentedControl } from 'segmented-control'
 ```sh
 git clone git@github.com:lorensr/segmented-control.git
 npm install
-npm run storybook
+npm start
 ```
 
 [http://localhost:9009](http://localhost:9009)

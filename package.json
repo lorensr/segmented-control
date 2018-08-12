@@ -4,7 +4,7 @@
   "description": "💅  A good-lookin' segmented control React component",
   "homepage": "https://github.com/lorensr/segmented-control",
   "scripts": {
-    "storybook": "start-storybook -p 9009",
+    "start": "start-storybook -p 9009",
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
     "prepublishOnly": "sh scripts/prepublish.sh",
