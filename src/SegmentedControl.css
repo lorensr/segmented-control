@@ -46,15 +46,14 @@
 
 
 
-////////////////////////////////////////////////////////////////////////////////
-//this section controls the division of the slider
-//if you have 2 options = 50%, 3 options = 33% and so on
-//but also the selected input matters. (input-1)*percentage
-//you'll also need to add a new entry for the new option
-//to do so just copy the last entry and change the numbers to [new highest]
-//and also make sure to set left: xx% correctly
-////////////////////////////////////////////////////////////////////////////////
-//entry #1
+/*
+this section controls the division of the slider
+if you have 2 options = 50%, 3 options = 33% and so on
+but also the selected input matters. (input-1)*percentage
+you'll also need to add a new entry for the new option
+to do so just copy the last entry and change the numbers to [new highest]
+and also make sure to set left: xx% correctly
+*/
 .segmented-control > input:disabled:nth-child(1) ~ label:nth-of-type(1) {
   opacity: 0.3;
   cursor: not-allowed;
@@ -125,7 +124,7 @@
 }
 
 
-//entry #2
+/* entry #2 */
 .segmented-control > input:disabled:nth-child(2) ~ label:nth-of-type(2) {
   opacity: 0.3;
   cursor: not-allowed;
@@ -189,7 +188,7 @@
   left: 10%;
 }
 
-//entry #3
+/* entry #3 */
 .segmented-control > input:disabled:nth-child(3) ~ label:nth-of-type(3) {
   opacity: 0.3;
   cursor: not-allowed;
@@ -247,7 +246,7 @@
   left: 20%;
 }
 
-//entry #4
+/* entry #4 */
 .segmented-control > input:disabled:nth-child(4) ~ label:nth-of-type(4) {
   opacity: 0.3;
   cursor: not-allowed;
@@ -299,7 +298,7 @@
   left: 30%;
 }
 
-//entry #5
+/* entry #5 */
 .segmented-control > input:disabled:nth-child(5) ~ label:nth-of-type(5) {
   opacity: 0.3;
   cursor: not-allowed;
@@ -345,7 +344,7 @@
   left: 40%;
 }
 
-//entry #6
+/* entry #6 */
 .segmented-control > input:disabled:nth-child(6) ~ label:nth-of-type(6) {
   opacity: 0.3;
   cursor: not-allowed;
@@ -385,7 +384,7 @@
   left: 50%;
 }
 
-//entry #7
+/* entry #7 */
 .segmented-control > input:disabled:nth-child(7) ~ label:nth-of-type(7) {
   opacity: 0.3;
   cursor: not-allowed;
@@ -419,7 +418,7 @@
   left: 60%;
 }
 
-//entry #8
+/* entry #8 */
 .segmented-control > input:disabled:nth-child(8) ~ label:nth-of-type(8) {
   opacity: 0.3;
   cursor: not-allowed;
@@ -447,7 +446,7 @@
   left: 70%;
 }
 
-//entry #9
+/* entry #9 */
 .segmented-control > input:disabled:nth-child(9) ~ label:nth-of-type(9) {
   opacity: 0.3;
   cursor: not-allowed;
@@ -469,7 +468,7 @@
   left: 80%;
 }
 
-//entry #10
+/* entry #10 */
 .segmented-control > input:disabled:nth-child(10) ~ label:nth-of-type(10) {
   opacity: 0.3;
   cursor: not-allowed;
@@ -485,7 +484,7 @@
   left: 90%;
 }
 
-//this section controls the size of the options for each number of total options
+/* this section controls the size of the options for each number of total options */
 .segmented-control > label:first-of-type:nth-last-of-type(1),
 .segmented-control > label:first-of-type:nth-last-of-type(1):after,
 .segmented-control > label:first-of-type:nth-last-of-type(1):before,
@@ -648,7 +647,7 @@
           box-sizing: border-box;
 }
 .segmented-control > label:before {
-  content: '';
+  content: "";
   color: inherit;
   background: currentColor;
      -moz-transition-property: left;
@@ -682,38 +681,3 @@
   text-decoration: line-through;
 }
 
-/*
-html {
-  font-size: 14px;
-  font-family: 'Source Sans Pro', Helvetica, arial, sans-serif;
-  font-weight: 400;
-  letter-spacing: .04em;
-  color: #C2C8CD;
-  cursor: default;
-  font-smooth: always;
-  -webkit-font-smoothing: antialiased;
-}
-html, body {
-  min-height: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-body {
-  display: -webkit-flex;
-  display: flex;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-.container {
-  margin: auto;
-  max-width: 700px;
-  min-width: 200px;
-  text-align: center;
-  padding: 0 6em;
-}*/
