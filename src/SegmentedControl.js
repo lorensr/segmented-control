@@ -7,6 +7,7 @@ import './SegmentedControl.css'
 
 class SegmentedControl extends Component {
   static propTypes = {
+    className: PropTypes.string,
     name: PropTypes.string.isRequired,
     options: PropTypes.array.isRequired,
     style: PropTypes.object,
@@ -31,8 +32,14 @@ class SegmentedControl extends Component {
 
     const style = extend(defaultStyle, this.props.style)
 
+    let containerClassName = 'segmented-control'
+    
+    if (typeof this.props.className !== 'undefined') {
+      containerClassName = `${containerClassName} ${this.props.className}`
+    }
+
     return (
-      <div className="segmented-control" style={style}>
+      <div className={containerClassName} style={style}>
         {this.props.options.map(option => (
           <input
             key={option.value}
