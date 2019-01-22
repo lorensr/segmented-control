@@ -8,7 +8,8 @@
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
     "prepublishOnly": "sh scripts/prepublish.sh",
-    "postversion": "git push && git push --follow-tags"
+    "postversion": "git push && git push --follow-tags",
+    "release": "release patch && echo 'now run npm publish'"
   },
   "bugs": {
     "url": "https://github.com/lorensr/segmented-control/issues"
