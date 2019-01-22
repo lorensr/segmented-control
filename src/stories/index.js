@@ -13,6 +13,7 @@ storiesOf('SegmentedControl', module)
   .addDecorator(centered)
   .add('Two options', () => (
     <SegmentedControl
+      className="custom-class"
       name="twoOptions"
       options={[
         { label: 'One', value: 'one', default: true },

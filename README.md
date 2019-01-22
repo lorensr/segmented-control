@@ -52,6 +52,7 @@ npm install --save segmented-control
 
 `<SegmentedControl>` props:
 
+- `className: PropTypes.string`: optional custom `className` for the container in addition to the default `segmented-control` class.
 - `name: PropTypes.string.isRequired`: name of the radio `<input>`s. Also the attribute included in the first argument of Formsy's `onSubmit`.
 - `options: PropTypes.array.isRequired`: Maximum length 10, each element an object of the form:
   - `label`: display text
