@@ -21,7 +21,9 @@ storiesOf('SegmentedControl', module)
       ]}
       style={{ width: 300, color: '#42a5f5' }} // blue400
       setValue={action('setValue')}
-    />
+    >
+       Mapa
+      </SegmentedControl>
   ))
   .add('Three options', () => (
     <SegmentedControl
@@ -33,7 +35,9 @@ storiesOf('SegmentedControl', module)
       ]}
       style={{ width: 303, color: '#ef5350' }} // red400
       setValue={action('setValue')}
-    />
+      >
+       Mapa
+      </SegmentedControl>
   ))
   .add('One disabled', () => (
     <SegmentedControl
@@ -46,7 +50,9 @@ storiesOf('SegmentedControl', module)
       ]}
       style={{ width: 400, color: '#ab47bc' }} // purple400
       setValue={action('setValue')}
-    />
+      >
+       Mapa
+      </SegmentedControl>
   ))
   .add('Ten options', () => (
     <SegmentedControl
@@ -65,7 +71,9 @@ storiesOf('SegmentedControl', module)
       ]}
       style={{ width: 1000, color: '#ef5350' }} // red400
       setValue={action('setValue')}
-    />
+      >
+       Mapa
+      </SegmentedControl>
   ))
 
 storiesOf('FormsySegmentedControl', module)
