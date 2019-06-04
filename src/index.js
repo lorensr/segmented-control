@@ -1,2 +1,2 @@
-export SegmentedControl from './SegmentedControl'
-export FormsySegmentedControl from './FormsySegmentedControl'
+export SegmentedControl from "./SegmentedControl";
+export FormsySegmentedControl from "./FormsySegmentedControl";

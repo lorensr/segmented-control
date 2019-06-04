@@ -1,68 +1,65 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import find from 'lodash/find'
-import extend from 'lodash/extend'
+import React, { useEffect } from "react";
+import PropTypes from "prop-types";
+import find from "lodash/find";
+import extend from "lodash/extend";
 
-import './SegmentedControl.css'
+import "./SegmentedControl.css";
 
-class SegmentedControl extends Component {
-  static propTypes = {
-    className: PropTypes.string,
-    name: PropTypes.string.isRequired,
-    options: PropTypes.array.isRequired,
-    style: PropTypes.object,
-    setValue: PropTypes.func
-  }
+const SegmentedControl = ({ className, name, options, style, setValue }) => {
+	useEffect(() => {
+		return () => {
+			const defaultOption = find(options, { default: true });
+			setValue(defaultOption.value);
+		};
+	});
 
-  componentWillMount() {
-    const defaultOption = find(this.props.options, { default: true })
-    this.setValue(defaultOption.value)
-  }
+	function setValue(val) {
+		setValue && setValue(val);
+	}
 
-  setValue(val) {
-    this.props.setValue && this.props.setValue(val)
-  }
+	const getId = option => name + option.value;
 
-  render() {
-    const getId = option => this.props.name + option.value
+	const defaultStyle = {
+		width: "100%"
+	};
 
-    const defaultStyle = {
-      width: '100%'
-    }
+	const StyleComponent = extend(defaultStyle, style);
 
-    const style = extend(defaultStyle, this.props.style)
+	let containerClassName = "segmented-control";
+	if (typeof className !== "undefined") {
+		containerClassName = `${containerClassName} ${className}`;
+	}
+	return (
+		<div className={containerClassName} style={StyleComponent}>
+			{options.map(option => (
+				<input
+					key={option.value}
+					type='radio'
+					name={name}
+					id={getId(option)}
+					defaultChecked={option.default}
+					disabled={option.disabled}
+				/>
+			))}
+			{options.map(option => (
+				<label
+					key={option.value}
+					onClick={() => setValue(option.value)}
+					htmlFor={getId(option)}
+					data-value={option.label}>
+					{option.label}
+				</label>
+			))}
+		</div>
+	);
+};
 
-    let containerClassName = 'segmented-control'
-    
-    if (typeof this.props.className !== 'undefined') {
-      containerClassName = `${containerClassName} ${this.props.className}`
-    }
+export default SegmentedControl;
 
-    return (
-      <div className={containerClassName} style={style}>
-        {this.props.options.map(option => (
-          <input
-            key={option.value}
-            type="radio"
-            name={this.props.name}
-            id={getId(option)}
-            defaultChecked={option.default}
-            disabled={option.disabled}
-          />
-        ))}
-        {this.props.options.map(option => (
-          <label
-            key={option.value}
-            onClick={() => this.setValue(option.value)}
-            htmlFor={getId(option)}
-            data-value={option.label}
-          >
-            {option.label}
-          </label>
-        ))}
-      </div>
-    )
-  }
-}
-
-export default SegmentedControl
+SegmentedControl.propTypes = {
+	className: PropTypes.string,
+	name: PropTypes.string.isRequired,
+	options: PropTypes.array.isRequired,
+	style: PropTypes.object,
+	setValue: PropTypes.func
+};
