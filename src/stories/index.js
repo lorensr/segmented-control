@@ -7,6 +7,7 @@ import RaisedButton from 'material-ui/RaisedButton'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
 import SegmentedControl from '../SegmentedControl'
+import SegmentedControlWithoutStyles from '../SegmentedControlWithoutStyles'
 import FormsySegmentedControl from '../FormsySegmentedControl'
 
 storiesOf('SegmentedControl', module)
@@ -95,4 +96,18 @@ storiesOf('FormsySegmentedControl', module)
         />
       </Formsy>
     </MuiThemeProvider>
+  ))
+
+storiesOf('SegmentedControlWithoutStyles', module)
+  .addDecorator(centered)
+  .add('Two options without styles', () => (
+    <SegmentedControlWithoutStyles
+      className="custom-class"
+      name="twoOptions"
+      options={[
+        { label: 'One', value: 'one', default: true },
+        { label: 'Two', value: 'two' }
+      ]}
+      setValue={action('setValue')}
+    />
   ))
