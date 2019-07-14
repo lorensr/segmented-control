@@ -5,6 +5,8 @@
 
 `<SegmentedControl>` – a good-lookin' segmented control React component
 
+`<SegmentedControlWithoutStyles>` - a version that doesn't import [the stylesheet](https://github.com/lorensr/segmented-control/blob/master/src/SegmentedControl.css) (if `<SegmentedControl>` doesn't work in your build system—eg Next.js)
+
 `<FormsySegmentedControl>` – a version for [Formsy](https://github.com/christianalfoni/formsy-react)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
