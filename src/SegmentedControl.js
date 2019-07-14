@@ -1,13 +1,4 @@
-import React from 'react'
+import './SegmentedControl.css'
 import SegmentedControlWithoutStyles from './SegmentedControlWithoutStyles'
 
-import './SegmentedControl.css'
-
-const SegmentedControl = (props) => (
-  <SegmentedControlWithoutStyles
-    {...props}
-  />
-)
-  
-export default SegmentedControl
-
+export default SegmentedControlWithoutStyles

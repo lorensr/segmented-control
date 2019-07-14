@@ -31,7 +31,7 @@ class SegmentedControlWithoutStyles extends Component {
     const style = extend(defaultStyle, this.props.style)
 
     let containerClassName = 'segmented-control'
-    
+
     if (typeof this.props.className !== 'undefined') {
       containerClassName = `${containerClassName} ${this.props.className}`
     }
