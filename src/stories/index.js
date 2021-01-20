@@ -3,8 +3,8 @@ import Formsy from 'formsy-react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import centered from '@storybook/addon-centered'
-import RaisedButton from 'material-ui/RaisedButton'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import Button from '@material-ui/core/Button'
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider'
 
 import SegmentedControl from '../SegmentedControl'
 import SegmentedControlWithoutStyles from '../SegmentedControlWithoutStyles'
@@ -84,7 +84,8 @@ storiesOf('FormsySegmentedControl', module)
           style={{ width: 300, color: 'rgb(0, 188, 212)' }} // match default material-ui primary teal
           setValue={action('setValue')}
         />
-        <RaisedButton
+        <Button
+          variant="contained"
           type="submit"
           label="submit formsy form"
           style={{
@@ -93,7 +94,9 @@ storiesOf('FormsySegmentedControl', module)
             margin: '20px auto'
           }}
           primary
-        />
+        >
+          Submit
+        </Button>
       </Formsy>
     </MuiThemeProvider>
   ))

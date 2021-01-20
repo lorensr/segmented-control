@@ -86,8 +86,8 @@ import { SegmentedControl } from 'segmented-control'
 
 ```jsx
 import Formsy from 'formsy-react'
-import RaisedButton from 'material-ui/RaisedButton'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import Button from '@material-ui/core/Button'
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider'
 import { FormsySegmentedControl } from 'segmented-control'
 
 <MuiThemeProvider>
@@ -103,7 +103,8 @@ import { FormsySegmentedControl } from 'segmented-control'
       ]}
       style={{ width: 300, color: 'rgb(0, 188, 212)' }} // match default material-ui primary teal
       />
-    <RaisedButton
+    <Button
+      variant="contained"
       type="submit"
       label="submit formsy form"
       style={{
@@ -112,10 +113,12 @@ import { FormsySegmentedControl } from 'segmented-control'
         margin: "20px auto"
       }}
       primary
-      />
+    >
+      Submit
+    </Button>
   </Formsy.Form>
 </MuiThemeProvider>
-```  
+```
 
 ## Development
 
