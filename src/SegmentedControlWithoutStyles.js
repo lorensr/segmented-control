@@ -9,17 +9,28 @@ class SegmentedControlWithoutStyles extends Component {
     name: PropTypes.string.isRequired,
     options: PropTypes.array.isRequired,
     style: PropTypes.object,
-    setValue: PropTypes.func
+    setValue: PropTypes.func,
+    selectedValue: PropTypes.string
   }
 
   componentWillMount() {
-    const defaultOption = find(this.props.options, { default: true })
-    this.setValue(defaultOption.value)
+    let defaultOption = find(this.props.options, { default: true })
+    if (this.selectedValueExists()) this.setValue(this.props.selectedValue)
+    else this.setValue(defaultOption.value)
   }
 
   setValue(val) {
     this.props.setValue && this.props.setValue(val)
   }
+
+  selectedValueExists = () => {
+    if (this.props.selectedValue) {
+      const exists = this.props.options.find(
+        (el) => el.value === this.props.selectedValue
+      )
+      if (exists) return true
+    } else return false
+  };
 
   render() {
     const getId = option => this.props.name + option.value
@@ -44,7 +55,11 @@ class SegmentedControlWithoutStyles extends Component {
             type="radio"
             name={this.props.name}
             id={getId(option)}
-            defaultChecked={option.default}
+            defaultChecked={
+              this.selectedValueExists()
+                ? option.value === this.props.selectedValue
+                : option.default
+            }
             disabled={option.disabled}
           />
         ))}

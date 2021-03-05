@@ -63,6 +63,7 @@ npm install --save segmented-control
   - `disabled: true`: optional
 - `style: PropTypes.object`: common styles are width and color
 - `setValue: PropTypes.func`: callback on input change, passed the value string. Called once initially with the default value on mount.
+- `selectedValue: PropTypes.string`: optional string value that enables programmatic selection of an option. Ensure the value passed exists as a value in the options. Note that selections will not change unless the selectedValue is updated.
 
 ```jsx
 import { SegmentedControl } from 'segmented-control'
