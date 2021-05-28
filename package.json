@@ -16,6 +16,12 @@
   },
   "license": "MIT",
   "main": "dist/index.js",
+  "exports": {
+    ".": "dist/index.js",
+    "./SegmentedControlWithoutStyles": "dist/SegmentedControlWithoutStyles.js",
+    "./SegmentedControl": "dist/SegmentedControl.js",
+    "./FormsySegmentedControl": "dist/FormsySegmentedControl.js"
+  },
   "files": [
     "dist"
   ],

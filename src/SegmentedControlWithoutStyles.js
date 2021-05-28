@@ -9,10 +9,10 @@ class SegmentedControlWithoutStyles extends Component {
     name: PropTypes.string.isRequired,
     options: PropTypes.array.isRequired,
     style: PropTypes.object,
-    setValue: PropTypes.func
+    setValue: PropTypes.func,
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const defaultOption = find(this.props.options, { default: true })
     this.setValue(defaultOption.value)
   }
@@ -22,10 +22,10 @@ class SegmentedControlWithoutStyles extends Component {
   }
 
   render() {
-    const getId = option => this.props.name + option.value
+    const getId = (option) => this.props.name + option.value
 
     const defaultStyle = {
-      width: '100%'
+      width: '100%',
     }
 
     const style = extend(defaultStyle, this.props.style)
@@ -38,7 +38,7 @@ class SegmentedControlWithoutStyles extends Component {
 
     return (
       <div className={containerClassName} style={style}>
-        {this.props.options.map(option => (
+        {this.props.options.map((option) => (
           <input
             key={option.value}
             type="radio"
@@ -48,7 +48,7 @@ class SegmentedControlWithoutStyles extends Component {
             disabled={option.disabled}
           />
         ))}
-        {this.props.options.map(option => (
+        {this.props.options.map((option) => (
           <label
             key={option.value}
             onClick={() => this.setValue(option.value)}
