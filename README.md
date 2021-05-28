@@ -12,11 +12,11 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-
 - [UX background](#ux-background)
 - [Component](#component)
 - [Usage](#usage)
   - [Plain](#plain)
+  - [Without styles](#without-styles)
   - [Formsy](#formsy)
 - [Development](#development)
   - [Credits](#credits)
@@ -78,6 +78,14 @@ import { SegmentedControl } from 'segmented-control'
   setValue={newValue => this.doSomething(newValue)}
   style={{ width: 400, color: '#ab47bc' }} // purple400
   />
+```
+
+### Without styles
+
+As above, but with a different import statement:
+
+```js
+import SegmentedControlWithoutStyles from 'segmented-control/SegmentedControlWithoutStyles'
 ```
 
 ### Formsy
