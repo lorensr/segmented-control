@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import centered from '@storybook/addon-centered'
 import Button from '@material-ui/core/Button'
-import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider'
+import ThemeProvider from '@material-ui/core/styles/ThemeProvider'
 
 import SegmentedControl from '../SegmentedControl'
 import SegmentedControlWithoutStyles from '../SegmentedControlWithoutStyles'
@@ -72,7 +72,7 @@ storiesOf('SegmentedControl', module)
 storiesOf('FormsySegmentedControl', module)
   .addDecorator(centered)
   .add('Three options', () => (
-    <MuiThemeProvider>
+    <ThemeProvider>
       <Formsy onValidSubmit={action('onFormsySubmit')}>
         <FormsySegmentedControl
           name="threeOptions"
@@ -98,7 +98,7 @@ storiesOf('FormsySegmentedControl', module)
           Submit
         </Button>
       </Formsy>
-    </MuiThemeProvider>
+    </ThemeProvider>
   ))
 
 storiesOf('SegmentedControlWithoutStyles', module)
