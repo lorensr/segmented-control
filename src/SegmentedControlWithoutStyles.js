@@ -46,12 +46,12 @@ class SegmentedControlWithoutStyles extends Component {
             id={getId(option)}
             defaultChecked={option.default}
             disabled={option.disabled}
+            onChange={() => this.setValue(option.value)}
           />
         ))}
         {this.props.options.map((option) => (
           <label
             key={option.value}
-            onClick={() => this.setValue(option.value)}
             htmlFor={getId(option)}
             data-value={option.label}
           >
