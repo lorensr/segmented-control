@@ -77,7 +77,7 @@
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-lumberjack": "^2.0.0",
-    "react-scripts": "^4.0.1",
+    "react-scripts": "^5.0.1",
     "release": "^6.3.1"
   },
   "dependencies": {
